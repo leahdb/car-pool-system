@@ -1,0 +1,136 @@
+//fonts
+$font: "Segoe UI";
+
+//colors
+$dark-blue: #143d6d;
+$darker-blue: #103158;
+$yellow: #ffb019;
+$white: white;
+$light-gray: rgba(160, 160, 160, 0.2);
+$dark-grey: #a0a0a0;
+$blue-grey: #ECF0F3;
+
+* {
+  font-family: $font;
+}
+
+.yellow-img {
+width: 50%;
+height: 767px;
+position: absolute;
+left: 0px;
+z-index: -1;
+}
+
+.header-img {
+width: 50%;
+height: 768px;
+position: absolute;
+right: 0px;
+z-index: -1;
+}
+
+.first {
+font-weight: bold;
+font-size: 80px;
+color: $darker-blue;
+padding-top: 120px;
+}
+
+.second {
+font-weight: bold;
+font-size: 80px;
+color: $darker-blue;
+--animate-delay: 0.7s;
+}
+
+.header-text {
+width: 40%;
+font-size: 20px;
+color: $darker-blue;
+font-weight: 500;
+--animate-delay: 1.5s;
+}
+
+.pros {
+margin-top: 240px;
+h3 {
+    text-align: center;
+    color: $darker-blue;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+p {
+    color: $darker-blue;
+    opacity: 0.8;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+}
+
+.phone1 {
+.light-yellow-img {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+.row {
+    margin-top: 230px;
+    .text {
+    h2 {
+        font-size: 60px;
+        color: $darker-blue;
+        font-weight: bold;
+        padding-top: 55px;
+    }
+
+    p {
+        width: 70%;
+        font-size: 20px;
+        text-align: center;
+        color: $darker-blue;
+        font-weight: 500;
+        margin-top: 35px;
+        line-height: 27px;
+    }
+    }
+
+    .image {
+    margin-top: -198px;
+    }
+}
+}
+
+.phone2 {
+.row {
+    margin-top: 0px;
+    .text {
+    h2 {
+        text-align: center;
+        font-size: 60px;
+        color: $yellow;
+        font-weight: bold;
+        padding-top: 55px;
+    }
+
+    p {
+        width: 85%;
+        font-size: 20px;
+        text-align: center;
+        color: $darker-blue;
+        font-weight: 500;
+        margin-top: 35px;
+        line-height: 27px;
+    }
+    }
+
+    .image {
+    margin-top: -75px;
+    }
+}
+}

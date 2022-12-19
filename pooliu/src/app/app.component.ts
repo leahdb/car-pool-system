@@ -9,15 +9,18 @@ import { Injectable } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass'],
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   constructor(private http: HttpClient) {}
   private headers = new Headers({ 'Content-Type': 'application/json' });
   title = 'pooliu';
-  onSubmit(form: NgForm){
-    return this.http.post('http://127.0.0.1:8000/api/items',
-    form.value).subscribe((res)=>{console.log(res)});
+  onSubmit(form: NgForm) {
+    return this.http
+      .post('http://127.0.0.1:8000/api/items', form.value)
+      .subscribe((res) => {
+        console.log(res);
+      });
   }
   private handleError(error: any): Promise<any> {
     console.error('An error occurred', error);

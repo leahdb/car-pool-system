@@ -1,0 +1,30 @@
+//fonts
+$font: "Segoe UI";
+
+//colors
+$dark-blue: #143d6d;
+$darker-blue: #103158;
+$yellow: #ffb019;
+$white: white;
+$light-gray: rgba(160, 160, 160, 0.2);
+$dark-grey: #a0a0a0;
+$blue-grey: #ECF0F3;
+
+* {
+  font-family: $font;
+}
+
+.nav{
+  background-color: $blue-grey;
+  .profile-pic{
+    height: 50px;
+    border-radius:50%;
+  }
+  .drop{
+    a{
+      text-decoration: none;
+      font-weight: 500;
+      color: $dark-blue;
+    }
+  }
+}

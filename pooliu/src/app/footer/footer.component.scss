@@ -1,0 +1,47 @@
+//fonts
+$font: "Segoe UI";
+
+//colors
+$dark-blue: #143d6d;
+$darker-blue: #103158;
+$yellow: #ffb019;
+$white: white;
+$light-gray: rgba(160, 160, 160, 0.2);
+$dark-grey: #a0a0a0;
+$blue-grey: #ECF0F3;
+
+* {
+  font-family: $font;
+}
+
+.home-footer {
+  background-color: $blue-grey;
+  margin-top: 50px;
+  // position: fixed;
+  // bottom: 0;
+  // width: 100%;
+  span {
+    font-size: 14px;
+    font-weight: 500;
+    color: $dark-blue;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.footer{
+  background-color: $blue-grey;
+  margin-top: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  span {
+    font-size: 14px;
+    font-weight: 500;
+    color: $dark-blue;
+  }
+  a {
+    text-decoration: none;
+  }
+}
