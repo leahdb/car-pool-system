@@ -10,10 +10,14 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { HomeNavigationComponent } from './home-navigation/home-navigation.component';
+import { LoginComponent } from './login/login.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'Home', component: HomeComponent },
+  { path: 'Login', component: LoginComponent },
+  { path: 'Sign-up', component: SignUpComponent },
   // { path: 'Course/:id', component: CourseComponent },
 ];
 @NgModule({
@@ -22,7 +26,9 @@ const appRoutes: Routes = [
     NavigationComponent,
     FooterComponent,
     HomeComponent,
-    HomeNavigationComponent
+    HomeNavigationComponent,
+    LoginComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,

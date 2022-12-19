@@ -1,0 +1,114 @@
+//fonts
+$font: "Segoe UI";
+
+//colors
+$dark-blue: #143d6d;
+$darker-blue: #103158;
+$yellow: #ffb019;
+$white: white;
+$light-gray: rgba(160, 160, 160, 0.2);
+$dark-grey: #a0a0a0;
+$blue-grey: #ECF0F3;
+
+* {
+  font-family: $font;
+}
+
+.container1{
+  background-color: $dark-blue;
+  height: 100vh;
+  width: 100vw;
+}
+
+//   background-color: $dark-blue;
+//   height: 100vh;
+//   width: 100vw;
+
+
+.img {
+border-radius: 0px 30px 30px 0px;
+width: 100%;
+height: inherit;
+}
+
+.cards {
+border: 0;
+border-radius: 30px 0px 0px 30px;
+height: 100%;
+
+.link {
+    color: $yellow;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: $dark-blue;
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 32px;
+    color: $dark-blue;
+    font-weight: bold;
+    text-align: center;
+}
+
+.inputs {
+    width: 70%;
+    margin: auto;
+    input {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: solid $dark-blue 2px;
+    font-weight: 500;
+    border-radius: 0;
+    }
+}
+
+.links {
+    text-decoration: none;
+    color: $yellow;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.submit {
+    margin-top: 70px;
+}
+
+p {
+    color: $dark-blue;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.verEmail {
+    color: $dark-blue;
+    font-weight: bold;
+    font-size: 18px;
+}
+.verHead {
+    color: $dark-grey;
+    font-weight: 500;
+    font-size: 20px;
+}
+.verEdit {
+    color: $yellow;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+.verEdit:hover {
+    color: $dark-blue;
+}
+.singleIn {
+    width: 70px;
+    height: 60px;
+    background-color: $light-gray;
+    border: 0;
+}
+}

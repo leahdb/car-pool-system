@@ -10,6 +10,8 @@ $light-gray: rgba(160, 160, 160, 0.2);
 $dark-grey: #a0a0a0;
 $blue-grey: #ECF0F3;
 
-* {
-  font-family: $font;
+div:has(> div.auth){
+  background-color: $dark-blue;
+  height: 100vh;
+  width: 100vw;
 }
