@@ -1,8 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+// import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
+import { VerifyComponent } from './verify/verify.component';
+import { CreateTripComponent } from './create-trip/create-trip.component';
+import { MapModalComponent } from './map-modal/map-modal.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatIconRegistry } from '@angular/material/icon';
+import {
+  CalendarModule,
+  DatePickerModule,
+  TimePickerModule,
+  DateRangePickerModule,
+  DateTimePickerModule,
+} from '@syncfusion/ej2-angular-calendars';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,12 +25,17 @@ import { HomeComponent } from './home/home.component';
 import { HomeNavigationComponent } from './home-navigation/home-navigation.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { DateTimePickerComponent } from './date-time-picker/date-time-picker.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'Home', component: HomeComponent },
   { path: 'Login', component: LoginComponent },
   { path: 'Sign-up', component: SignUpComponent },
+  { path: 'Verify', component: VerifyComponent },
+  { path: 'Create-trip', component: CreateTripComponent },
+  { path: 'nav', component: NavigationComponent },
   // { path: 'Course/:id', component: CourseComponent },
 ];
 @NgModule({
@@ -28,16 +46,23 @@ const appRoutes: Routes = [
     HomeComponent,
     HomeNavigationComponent,
     LoginComponent,
-    SignUpComponent
+    SignUpComponent,
+    VerifyComponent,
+    CreateTripComponent,
+    MapModalComponent,
+    DateTimePickerComponent,
   ],
   imports: [
+    CalendarModule, DatePickerModule, TimePickerModule, DateRangePickerModule, DateTimePickerModule,
+    MatMenuModule,
+    MatIconModule,
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
+    //FormsModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [MatIconRegistry],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

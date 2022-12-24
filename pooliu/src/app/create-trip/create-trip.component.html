@@ -1,0 +1,96 @@
+<app-navigation></app-navigation>
+<h1 class="title mt-5">CREATE TRIP</h1>
+<div class="container mt-5 main-container">
+<div class="row inputs mt-5">
+    <div class="col-5 p-4">
+        <button
+        type="button"
+        class="btn btn-outline-primary location-btn"
+        data-bs-toggle="modal" data-bs-target="#map-modal"
+        >
+        SELECT LOCATION
+        </button>
+    </div>
+    <div class="col-2 d-flex justify-content-center p-4">
+        <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="42.05" height="34.858" viewBox="0 0 42.05 34.858">
+            <path id="arrow_1_" data-name="arrow (1)" d="M1,14.894H38.05M24.156,1,38.05,14.894,24.156,28.787" transform="translate(1.5 2.536)" fill="none" stroke="#ffb019" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" fill-rule="evenodd"/>
+            </svg>
+        </a>
+    </div>
+    <div class="col-5 p-4">
+        <select class="form-select" aria-label="Default select example">
+            <option selected>CAMPUS SITE</option>
+            <option value="1">BEIRUT</option>
+            <option value="2">BEKAA</option>
+            <option value="3">HALBA</option>
+            <option value="4">MOUNT LEBANON</option>
+            <option value="5">NABATIEH</option>
+            <option value="6">RAYAK</option>
+            <option value="7">SAIDA</option>
+            <option value="8">TRIPOLI</option>
+            <option value="9">TYRE</option>
+        </select>
+    </div>
+    <div class="col-6 p-4">
+        <button
+        type="button"
+        class="btn btn-outline-primary location-btn"
+        data-bs-toggle="modal" data-bs-target="#calendar-modal"
+        >
+        SELECT DATE AND TIME
+        </button>
+    </div>
+    <div class="col-6 p-4">
+        <button
+        type="button"
+        class="btn btn-outline-primary location-btn"
+        >
+        SELECT RIDE TYPE
+        </button>
+    </div>
+    <div class="col-6 p-4">
+        <div class="input-group">
+            <span class="input-group-text seat-label px-xxl-5">SEATS AVAILABLE</span>
+            <button class="btn btn-outline-secondary add p-0" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="4.5" viewBox="0 0 22 4.5">
+                    <line id="minus" x2="22" transform="translate(0 2.25)" fill="none" stroke="#ffb019" stroke-width="4.5"/>
+                </svg>
+            </button>
+            <input type="text" class="form-control number" value="0">
+            <button class="btn btn-outline-secondary add p-0" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+            <g id="Group_226" data-name="Group 226" transform="translate(-500 -645)">
+                <line id="minus" x2="22" transform="translate(500 656)" fill="none" stroke="#ffb019" stroke-width="4.5"/>
+                <line id="minus-2" data-name="minus" x2="22" transform="translate(511 645) rotate(90)" fill="none" stroke="#ffb019" stroke-width="4.5"/>
+            </g>
+            </svg>
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container d-flex justify-content-end">
+<a href="">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="138" height="64" viewBox="0 0 138 64">
+    <defs>
+        <filter id="Rectangle_11" x="0" y="0" width="138" height="64" filterUnits="userSpaceOnUse">
+        <feOffset dx="-1" dy="2" input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="3" result="blur"/>
+        <feFlood flood-color="#143d6d" flood-opacity="0.502"/>
+        <feComposite operator="in" in2="blur"/>
+        <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="Group_17" data-name="Group 17" transform="translate(-1026 -569)">
+        <g transform="matrix(1, 0, 0, 1, 1026, 569)" filter="url(#Rectangle_11)">
+        <rect id="Rectangle_11-2" data-name="Rectangle 11" width="120" height="46" rx="8" transform="translate(10 7)" fill="#143d6d"/>
+        </g>
+        <text id="CREATE" transform="translate(1064 606)" fill="#ffb019" font-size="18" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">CREATE</tspan></text>
+    </g>
+    </svg>
+</a>
+</div>
+<app-map-modal></app-map-modal>
+<app-date-time-picker></app-date-time-picker>
+<app-footer></app-footer>

@@ -1,0 +1,72 @@
+//fonts
+$font: "Segoe UI";
+
+//colors
+$dark-blue: #143d6d;
+$darker-blue: #103158;
+$yellow: #ffb019;
+$white: white;
+$light-gray: rgba(160, 160, 160, 0.2);
+$dark-grey: #a0a0a0;
+$blue-grey: #ECF0F3;
+
+.main-container{
+padding: 0 15%;
+}
+
+.title {
+    margin-top: 0px;
+    font-size: 50px;
+    color: $dark-blue;
+    font-weight: bold;
+    text-align: center;
+}
+
+.inputs {
+    select{
+    //width: 300px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: solid $dark-blue 2px;
+    border-radius: 0;
+    font-weight: 500;
+    color: $dark-blue;
+    font-size: 20px;
+    }
+
+    .dropdown{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: solid $dark-blue 2px;
+    }
+
+    .location-btn{
+    width: 100%;
+    font-weight: 500;
+    color: $dark-blue;
+    font-size: 20px;
+    border: solid $dark-blue 2px;
+    }
+
+    .seat-label{
+    color: $dark-blue;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: white;
+    border: solid $dark-blue 2px;
+    }
+
+    .number{
+    text-align: center;
+    border: solid $dark-blue 2px;
+    }
+    .add{
+    width: 40px;
+    font-weight: bold;
+    color: $yellow;
+    background-color: $dark-blue;
+    border: solid $dark-blue 2px;
+    }
+}

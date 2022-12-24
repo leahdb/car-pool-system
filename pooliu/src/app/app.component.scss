@@ -1,17 +1,8 @@
-//fonts
-$font: "Segoe UI";
-
-//colors
-$dark-blue: #143d6d;
-$darker-blue: #103158;
-$yellow: #ffb019;
-$white: white;
-$light-gray: rgba(160, 160, 160, 0.2);
-$dark-grey: #a0a0a0;
-$blue-grey: #ECF0F3;
-
-div:has(> div.auth){
-  background-color: $dark-blue;
-  height: 100vh;
-  width: 100vw;
-}
+@import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-lists/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-calendars/styles/material.css';
+@import '../../node_modules/@syncfusion/ej2-angular-calendars/styles/material.css';
